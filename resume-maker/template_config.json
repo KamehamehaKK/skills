@@ -1,0 +1,49 @@
+{
+  "name": "周沛康",
+  "phone": "18878918417",
+  "email": "1372220517@qq.com",
+  "photo": "C:/Users/LENOVO-/OneDrive/Desktop/cc-rag2/简历.jpg",
+  "education": [
+    {"school": "武汉大学", "major": "计算机技术", "degree": "硕士", "years": "2026.09 - 2028.06"},
+    {"school": "武汉大学", "major": "计算机科学与技术", "degree": "本科", "years": "2021.09 - 2025.06"}
+  ],
+  "projects": [
+    {
+      "name": "知识问答助手",
+      "role_time": "独立开发 | 2026.04",
+      "tech_stack": "FastAPI + Streamlit + ChromaDB + LangChain + DeepSeek",
+      "bullets": [
+        {"label": "智能分流策略", "content": "引入 BGE-Reranker 精排模型替代向量距离做语义判断，实现闲聊与知识问答自动分流，分流准确率约 90"},
+        {"label": "对话记忆机制", "content": "设计滑动窗口 + 增量摘要混合策略，在对话连贯性与 Token 成本间做权衡，支持 20+ 轮长会话不退化，相比全量携带节省约 60% Token"},
+        {"label": "数据驱动优化", "content": "通过三组对比实验发现 Reranker 已覆盖查询改写收益，果断裁剪冗余环节，LLM 调用延迟降低约 40%，召回率持平"}
+      ]
+    },
+    {
+      "name": "智选出行",
+      "role_time": "独立开发 | 2026.05",
+      "tech_stack": "Next.js + TypeScript + Tailwind CSS + DeepSeek",
+      "bullets": [
+        {"label": "多 Agent 协作框架", "content": "从零构建通用 Agent 基类，支持 Tool Calling 多轮推理与对话记忆管理；设计 Orchestrator 编排层，根据用户意图自动调度景点、美食、行程等 5 类专业 Agent 协同工作"},
+        {"label": "LLM + 实时数据混合决策", "content": "集成高德地图 POI 与 AviationStack 航班 API，设计多维评分算法对真实数据排序后交由 LLM 二次筛选；API 失败自动降级为 LLM mock 兜底，确保体验不中断"},
+        {"label": "前端性能优化", "content": "实现跨天拖拽排序、滑动删除等手势交互；设计模块级缓存层（10min TTL）+ URL 状态同步，页面切换时 API 请求减少约 80%"}
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "上汽通用五菱",
+      "title": "嵌入式软件工程师",
+      "years": "2025.09 - 2026.03",
+      "bullets": [
+        {"label": "测试体系搭建", "content": "主导车身控制器多模块单元测试与集成测试，使用 Tessy + CANoe 工具链，覆盖正常路径与边界异常场景"},
+        {"label": "用户场景验证", "content": "从真实用车场景出发设计实车测试用例（极端温度、低电量、高频操作），推动多个软件缺陷修复"}
+      ]
+    }
+  ],
+  "skills": [
+    {"label": "AI 产品认知", "content": "深入理解 RAG 全链路（Embedding、向量检索、Reranker、Prompt Engineering），正在系统学习多模态大模型产品"},
+    {"label": "Vibecoding", "content": "高频使用 Claude Code、Cursor、Trae 等 AI Agent 工具，上述项目均以 vibe coding 方式完成，自然语言驱动需求到代码闭环"},
+    {"label": "产品基本功", "content": "熟悉 PRD/MRD 撰写、竞品调研与 SWOT 分析，有 AI 产品从 0 到 1 的完整实战经验"},
+    {"label": "技术栈", "content": "Python、FastAPI、LangChain、Streamlit、Next.js、TypeScript、SQLite、ChromaDB、Git"}
+  ]
+}
